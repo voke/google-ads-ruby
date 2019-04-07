@@ -26,7 +26,6 @@ def add_keyword(customer_id, ad_group_id, keyword)
   client = Google::Ads::GoogleAds::GoogleAdsClient.new
 
   agc_service = client.service(:AdGroupCriterion)
-  ag_service = client.service(:AdGroup)
 
   # Create a keyword
   criterion = client.resource(:AdGroupCriterion)
